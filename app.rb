@@ -22,7 +22,7 @@ module FormsLab
       @name = Ship.all.map {|ship| ship.name}
       @type = Ship.all.map {|ship| ship.type}
       @booty = Ship.all.map {|ship| ship.booty}
-
+      binding.pry
       erb :'pirates/show'
     end
 
